@@ -1,0 +1,1471 @@
+:root{
+    --color1: #d7263d;
+    --color2: #02182b;
+    --color3: #0197F6;
+    --color4: #448Fa3;
+    --color5: #68c5db;
+}
+/* Scroll Bar */
+.HomeBody::-webkit-scrollbar {
+    width: 0.8em;
+    outline: 20px solid #555;
+}
+.HomeBody::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.HomeBody::-webkit-scrollbar-thumb {
+  background-color: var(--color2);
+  border-radius: 10px;
+}
+/* صفحه login */
+*{
+    padding: 0;
+    margin: 0;
+}
+/* دوران الأيقونه */
+@keyframes change {
+    50% {transform:rotate(360deg)};
+}
+/* ظهور الفورم */
+@keyframes zoom{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+/* تحميل الصفحه */
+@keyframes HI{
+    from{opacity: 0;}
+    to{opacity: 0.99;}
+}
+/* Background Image Body */
+.body{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(../Images/bck.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+/* Title h1 */
+h1{
+    color: var(--color1);
+    text-shadow: -1px -2px 15px #FFF;
+    font-size: 100px;
+    font-weight: bolder;
+    position: fixed;
+    margin-top: 7%;
+    margin-left: 32%;
+    animation: HI 4s;
+}
+/* User Icon */
+/* Div */
+.icon{
+    position: fixed;
+    margin-top: 19%;
+    margin-left: 45%;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    box-shadow: -1px -2px 15px #FFF;
+    animation: HI 4s;
+}
+.icon:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+/* Icon */
+.icon i{
+    font-size: 80px;
+    color: #FFF;
+    text-align: center;
+    position: absolute;
+    left: 27%;
+    top: 20%;
+    animation: change 4.5s;
+    animation-iteration-count: 0.5;
+}
+/* Buttons */
+.buttons{
+    position: fixed;
+    margin-top: 520px;
+    margin-left: 42.5%;
+    display: flex;
+    width: 220px;
+    height: 63px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    animation: HI 4s;
+    background:linear-gradient(rgba(225,225,225,0.1),rgba(225,225,225,0.1)), var(--color1) ;
+}
+/* Login Button */
+.buttons .login{
+    width: 45%;
+    background-color: #FFF;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 22px;
+    border-radius: 10px;
+}
+.buttons .login a{
+    color: #000;
+    text-decoration: none;
+}
+.buttons .login a:hover{
+    color: #999;
+}
+/* Sign Up Button */
+.buttons .signupBtn{
+    width: 55%;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 22px;
+    border-radius: 10px;
+}
+.buttons .signupBtn a{
+    color: #FFF;
+    text-decoration: none;
+}
+.buttons .signupBtn a:hover{
+    color: #999;
+}
+.hide{
+    display: none;
+}
+/* ---------------------------------------------------- */
+
+/* Form */
+/* Login Form */
+.loginForm{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 300px;
+    margin-left: 35%;
+    width: 450px;
+    height: 290px;
+    border: 1px solid #FFF;
+    background-color: rgba(0,0,0,0.7);
+    animation-name: zoom;
+    animation-duration: 1s;
+}
+/* h2 */
+.loginForm h2{
+    text-align: center;
+    font-size: 25px;
+    color: #FFF;
+    padding-top: 30px;
+}
+.userName , .userPassword{
+    margin: 15px 0px 20px 70px;
+}
+/* Icons */
+.loginForm .loginIcon{
+    color: #FFF;
+    font-size: 20px;
+    background:linear-gradient(rgba(225,225,225,0.1),rgba(225,225,225,0.1)), var(--color1) ;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 7px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: -4px;
+    position: absolute;
+}
+/* Close Icon */
+.loginForm #window-close{
+    position: absolute;
+    top: 1.5%;
+    left: 93%;
+    text-decoration: none;
+    font-size: 22px;
+    color: #FF6666;
+}
+.loginForm #window-close:hover{
+    cursor: pointer;
+    border: 2px solid #FFF;
+}
+/* inputs */
+.loginForm input[type="text"]{
+    height: 35px;
+    width: 70%;
+    margin-left: 15px;
+    padding-left: 35px;
+    outline: none;
+}
+.loginForm input[type="password"]{
+    height: 35px;
+    width: 70%;
+    margin-left: 15px;
+    padding-left: 35px;
+    outline: none;
+}
+/* Links */
+.loginForm #Enter{
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-top: 7px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+    border: 1px solid #FFF;
+    width: 120px;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.7);
+}
+.loginForm .ForgetsPassword{
+    display: block;
+    text-align: center;
+    margin: 15px auto;
+    text-decoration: underline;
+    color: #FFF;
+}
+.loginForm{
+    display: none;
+}
+.Login{
+    display: block;
+    z-index: 1;
+}
+/* ------------------------------------------------- */
+/* Sign Up Form */
+.signUpForm{
+    background-color: #FFF;
+    position: fixed;
+    margin-top: 250px;
+    margin-left: 33%;
+    height: 480px;
+    width: 500px;
+    border-radius: 20px;
+    animation-name: zoom;
+    animation-duration: 1s;
+}
+/* h2 */
+.signUpForm h2{
+    font-size: 25px;
+    padding: 20px 0px 0px 15px;
+}
+/* Close Icon */
+.signUpForm #window-close2{
+    position: absolute;
+    top: 2%;
+    left: 93%;
+    text-decoration: none;
+    font-size: 22px;
+    color: #FF6666;
+}
+.signUpForm #window-close2:hover{
+    cursor: pointer;
+    color: #444;
+}
+/* quite p */
+.signUpForm .quite p{
+    margin-top: 10px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+/* after p */
+.signUpForm .quite p::after{
+    content: "";
+    width: 90%;
+    height: 1.5px;
+    background-color:#000;
+    position: absolute;
+    left: 48%;
+    top: 20%;
+    transform: translate(-50%,-50%);
+}
+/* Sign Up Form --> Form */
+.signUpForm form label{
+    display: block;
+    padding-left: 15px;
+}
+.signUpForm form input[type="text"], .signUpForm form input[type="password"], .signUpForm form input[type="email"]{
+    height: 20px;
+    border: none;
+    border-bottom: 2px solid var(--color1);
+    margin-bottom: 5px;
+    margin-left: 15px;
+    width: 85%;
+    outline: none;
+}
+.signUpForm form input[type="text"]::placeholder, .signUpForm form input[type="password"]::placeholder, .signUpForm form input[type="email"]::placeholder, select{
+    color: #777;
+    font-size: 13px;
+}
+/* Sign Up Form --> radio Button */
+.signUpForm .radioButton{
+    display: flex;
+    margin-top: 10px;
+}
+.signUpForm .radioButton h3{
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.signUpForm .radioButton input[type="radio"]{
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+/* Sign Up Form --> Select */
+.signUpForm .select{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.signUpForm .select h3{
+    padding-left: 15px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.signUpForm select{
+    margin-left: 10px;
+    border: 1px solid #000;
+    width: 70%;
+    border-radius: 3px;
+    outline: none;
+}
+/* Sign Up Form --> Link */
+.signUpForm #sign{
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-top: 8px;
+    text-decoration: none;
+    color: var(--color1);
+    font-size: 18px;
+    border: 1px solid var(--color1);
+    width: 120px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.signUpForm #sign:hover{
+    background-color: var(--color1);
+    color: #FFF;
+}
+.signUpForm{
+    display: none;
+}
+.Sign{
+    display: block;
+}
+/* ---------------------------------------------------- */
+/* صفحه Home */
+.HomeBody{
+    background-color:#A8A8A8;
+}
+/* Left Side Bar */
+.LeftSideBar{
+    position: fixed;
+    height: 100%;
+    width: 5%;
+    text-align: center;
+}
+.LeftSideBar ul li{
+    list-style: none;   
+}
+.LeftSideBar ul li a{
+    text-decoration: none;
+    color: #999;
+    display: block;
+    margin-top: 22px;
+    font-size: 30px;
+}
+.LeftSideBar ul li a:hover{
+    color: #555;
+}
+.LeftSideBar ul .alignLeft{
+    color: var(--color1);
+    margin-top: 90px;
+}
+/* Right Side Bar */
+.RightSideBar{
+    position: fixed;
+    left: 95%;
+    height: 100%;
+    width: 5%;
+    box-sizing: border-box;
+}
+.RightSideBar ul li{
+    list-style: none;
+}
+.RightSideBar img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+.RightSideBar .imageOne{
+    margin-top: 90px;
+}
+/* Div Color Green --> Online People */
+.RightSideBar .green{
+    background-color: green;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 3px;
+}
+/* Different Div Color Green */
+.RightSideBar .differentGreen{
+    background-color: green;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 92px;
+    margin-left: 2.5px;
+}
+/* Div Color red --> Offline People */
+.RightSideBar .red{
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 3px;
+}
+/* Nav Bar */
+/* Image Logo */
+.NavBar{
+    background-color: var(--color2);
+    height: 70px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    position: fixed;
+    top: 0%;
+}
+.NavBar .ImageLogoInput{
+    display: flex;
+    width: 50%;
+}
+.NavBar .ImageLogo{
+    height: 70px;
+    width: 76px;
+    background-color: var(--color1);
+}
+.NavBar .ImageLogo .Logo{
+    width: 60px;
+    height: 45px;
+    margin: 10px 0 0 5px;
+}
+.NavBar input[type="search"]{
+    margin-left: 170px;
+    height: 45px;
+    width: 60%;
+    margin-top: 12px;
+    border: none;
+    outline: none;
+    background-color:#042d4b;
+    border-radius: 25px;
+    padding: 20px;
+    color: #FFF;
+}
+/* Icons And Profile */
+.NavBar .IconsandProfile{
+    width: 50%;
+    display: flex;
+}
+/* Icons */
+.NavBar .icons{
+    display: flex;
+    position: relative;
+}
+/* Number Above Icons */
+.NavBar .icons .numOne{
+    position: fixed;
+    top: 0.9%;
+    left: 58%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color1);
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    padding: 1px;
+    margin-left: 30px;
+}
+.NavBar .icons .numTwo{
+    position: fixed;
+    top: 1%;
+    left: 63.5%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color1);
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    padding: 1px;
+    margin-left: 30px;
+}
+.NavBar .icons .numThree{
+    position: fixed;
+    top: 1.1%;
+    left: 67.5%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color1);
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    padding: 1px;
+    margin-left: 30px;
+}
+/* Icons */
+.NavBar .icons .users{
+    position: fixed;
+    top: 3%;
+    left: 58%;
+    color: #777;
+    font-size: 30px;
+}
+.NavBar .icons .comments{
+    color: #777;
+    font-size: 30px;
+    position: fixed;
+    top: 3%;
+    left: 63.5%;
+}
+.NavBar .icons .bell{
+    color: #777;
+    font-size: 30px;
+    position: fixed;
+    top: 3%;
+    left: 68%;
+}
+/* Profile */
+.NavBar .Profile{
+    display: flex;
+    margin-left: 20px;
+}
+.NavBar .Profile img{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    margin-left: 470px;
+    margin-top: 10px;
+}
+.NavBar .Profile p{
+    color: #FFF;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.NavBar .Profile .sortDown{
+    font-size: 25px;
+    color: #777;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.NavBar i:hover{
+    cursor: pointer;
+}
+/* Left One Div */
+.LeftOneDiv{
+    background-color: #FFF;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 1px solid #555;
+    position: fixed;
+    top: 12%;
+    left: 6.2%;
+    width: 23%;
+    padding-bottom: 10px;
+}
+.LeftOneDiv img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.LeftOneDiv h3{
+    padding: 15px;
+    font-size: 20px;
+    color: #444;
+}
+.LeftOneDiv hr{
+    width: 100%;
+    margin-top: -3px;
+}
+.LeftOneDiv .OneOfLeft, .LeftOneDiv .TwoOfLeft, .LeftOneDiv .ThreeOfLeft, .LeftOneDiv .FourOfLeft{
+    display: flex;
+    margin-bottom: 7px;
+}
+.LeftOneDiv a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+/* Ona And Two Of Left */
+.LeftOneDiv .OneOfLeft img, .LeftOneDiv .TwoOfLeft img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 10px 7px 0px 10px;
+}
+.LeftOneDiv .OneOfLeft h5, .LeftOneDiv .TwoOfLeft h5{
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+.LeftOneDiv .OneOfLeft p{
+    color: #999;
+    font-weight: lighter;
+    font-size: 13px;
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    font-weight: 400;
+}
+.LeftOneDiv .TwoOfLeft p{
+    color: #999;
+    font-weight: lighter;
+    font-size: 13px;
+    position: absolute;
+    top: 51%;
+    left: 25%;
+    font-weight: 400;
+}
+.LeftOneDiv .OneOfLeft i, .LeftOneDiv .TwoOfLeft i{
+    font-size: 18px;
+    margin-left: 85px;
+    margin-top: 20px;
+    color: var(--color1);
+}
+/* Three and Four Of Left */
+.LeftOneDiv .ThreeOfLeft img, .LeftOneDiv .FourOfLeft img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 10px 7px 0px 10px;
+}
+.LeftOneDiv .ThreeOfLeft h5, .LeftOneDiv .FourOfLeft h5{
+    font-size: 15px;
+    margin-top: 18px;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+.LeftOneDiv .ThreeOfLeft p{
+    color: #999;
+    font-weight: lighter;
+    font-size: 13px;
+    position: absolute;
+    left: 25%;
+    top: 70%;
+    font-weight: 400;
+}
+.LeftOneDiv .FourOfLeft p{
+    color: #999;
+    font-weight: lighter;
+    font-size: 13px;
+    position: absolute;
+    left: 25%;
+    top: 89%;
+    font-weight: 400;
+}
+.LeftOneDiv .ThreeOfLeft i, .LeftOneDiv .FourOfLeft i{
+    font-size: 18px;
+    margin-left: 85px;
+    margin-top: 20px;
+}
+.LeftOneDiv a:hover{
+    text-decoration: underline;
+}
+/* Left Two Div */
+.LeftTwoDiv{
+    background-color: #FFF;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 1px solid #555;
+    position: fixed;
+    top: 64%;
+    left: 6.2%;
+    width: 23%;
+}
+.LeftTwoDiv img{
+    width: 100px;
+    height: 85px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+.P1Image, .P2Image, .P3Image, .P4Image, .P5Image, .P6Image{
+    margin-right: -23px;
+}
+.LeftTwoDiv h3{
+    padding: 15px;
+    font-size: 20px;
+    color: #444;
+}
+.LeftTwoDiv hr{
+    width: 100%;
+    margin-top: -3px;
+}
+/* Slider */
+/* My Story */
+.SliderPlugin{
+    display: flex;
+    margin-left: 15px;
+}
+.slider .myStory{
+    position: relative;
+    margin-left: 460px;
+    margin-top: 94px;
+    background-color: var(--color2);
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+}
+.slider .myStory img{
+    width: 190px;
+    height: 72%;
+    margin-left: -14.9px;
+    border-radius: 10px 10px 0px 0px;
+}
+.slider .myStory a{
+    text-decoration:none;
+}
+.slider .myStory i{
+    font-size: 40px;
+    position: absolute;
+    top: 65%;
+    left: 39%;
+    color: var(--color1);
+}
+.slider .myStory p{
+    font-size: 22px;
+    color: #FFF;
+    text-align: center;
+    margin-top: 15px;
+}
+/* Slider Plugin */
+.owl-theme{
+    position: relative;
+    margin-top: 94px;
+    padding: 0;
+    overflow: hidden;
+    margin-left: -100px;
+    z-index: 0;
+}
+.owl-theme .Stories{
+    height: 245px;
+    overflow: hidden;
+    /* z-index: -1; */
+}
+.owl-theme .Stories .smallImage{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border: 5px solid var(--color1);
+}
+.owl-theme .Stories .PhotoLink img{
+    height: 245px;
+    border-radius: 10px;
+}
+.owl-theme .Stories .NameLink{
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--color1);
+    color: #FFF;
+    width: 90%;
+    height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    padding-top: 3px;
+    font-size: 14px;
+}
+.owl-theme .Stories:hover{
+    transform: scale(1.1);
+}
+/* Post */
+.Post{
+    background-color: #FFF;
+    position: relative;
+    margin-top: 1%;
+    margin-left: 31%;
+    width: 61%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+.Post .ImageInputPost{
+    display: flex;
+}
+.Post img{
+    height: 115px;
+    width: 120px;
+    margin-right: 12px;
+}
+.Post textarea{
+    border: none;
+    outline: none;
+    background-color: #A8A8A8;
+    border-radius: 5px;
+    color: #555;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.Post textarea::placeholder{
+    font-size: 22px;
+    color: #444;
+}
+.Post .PostNow{
+    display: inline-block;
+    margin-left: 35%;
+    margin-top: 20px;
+    background-color: var(--color1);
+    color: #FFF;
+    width: 30%;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.Post .PostNow:hover{
+    opacity: 0.9;
+}
+.Post .ThreeIcons{
+    display: flex;
+}
+.Post .ThreeIcons .VideoIcon, .Post .ThreeIcons .PhotosIcon, .Post .ThreeIcons .FeelingIcon{
+    display: flex;
+}
+.Post .ThreeIcons a{
+    text-decoration: none;
+}
+.Post .ThreeIcons a:hover{
+    opacity: 0.8;
+}
+.Post .ThreeIcons .VideoIcon i{
+    font-size: 25px;
+    color: var(--color1);
+    margin-right: 10px;
+    margin-left: 90px;
+}
+.Post .ThreeIcons .PhotosIcon i{
+    font-size: 25px;
+    color: green;
+    margin-right: 10px;
+    margin-left: 200px;
+}
+.Post .ThreeIcons .FeelingIcon i{
+    font-size: 25px;
+    color: orange;
+    margin-right: 10px;
+    margin-left: 200px;
+}
+.Post .ThreeIcons  p{
+    color: #999;
+}
+/* Update Profile */
+.UpdateProfile{
+    background-color: #FFF;
+    margin-left: 31%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    width: 61%;
+    border-radius: 10px;
+}
+/* Photo and P*/
+.UpdateProfile .PhotoandP{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.UpdateProfile .PhotoandP .CirculeImage{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.UpdateProfile .PhotoandP a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #000;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.UpdateProfile .PhotoandP p{
+    margin-top: 18px;
+    margin-left: 10px;
+    color: #666;
+    font-size: 19px;
+}
+.UpdateProfile .PhotoandP .Time{
+    margin-top: 18px;
+    margin-left: 50%;
+    color: #666;
+    font-size: 19px;
+}
+/* Profile New Pic*/
+.UpdateProfile .ProfileNewPic{
+    position: relative;
+}
+.UpdateProfile .ProfileNewPic .NewBackground{
+    width: 103.3%;
+    margin-left: -15px;
+}
+.UpdateProfile .ProfileNewPic .NewPic{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    top: 22%;
+    left: 28%;
+    border: 6px solid #FFF;
+}
+/* Love and Comments --> UpdateProfile & PostProfile */
+.LoveandComments{
+    display: flex;
+}
+.LoveandComments .LoveIcon{
+    display: flex;
+}
+.LoveandComments .LoveIcon i{
+    color: #777;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.LoveandComments .LoveIcon p{
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.LoveandComments .CommentIcon{
+    display: flex;
+}
+.LoveandComments .CommentIcon i{
+    color: #777;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.LoveandComments .CommentIcon p{
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.LoveandComments .CommentIcon p:hover{
+    cursor: pointer;
+}
+.LoveandComments .ShareIcon{
+    display: flex;
+}
+.LoveandComments .ShareIcon i{
+    color: #777;
+    margin-top: 20px;
+    margin-left: 450px;
+}
+.LoveandComments .ShareIcon p{
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.LoveandComments i:hover{
+    cursor: pointer;
+}
+/* Post Profile */
+.PostProfile{
+    background-color: #FFF;
+    margin-left: 31%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    width: 61%;
+    border-radius: 10px;
+}
+/* Photo and P */
+.PostProfile .PhotoandP{
+    display: flex;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.PostProfile .PhotoandP .CirculeImage{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.PostProfile .PhotoandP a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #000;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.PostProfile .PhotoandP .Time{
+    margin-top: 18px;
+    margin-left: 72%;
+    color: #777;
+    font-size: 19px;
+}
+/* Post Profile Two */
+.PostProfileTwo{
+    background-color: #FFF;
+    margin-left: 31%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    width: 61%;
+    border-radius: 10px;
+}
+/* Photo and P*/
+.PostProfileTwo .PhotoandP{
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.PostProfileTwo .PhotoandP .CirculeImage{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.PostProfileTwo .PhotoandP a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #000;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.PostProfileTwo .PhotoandP p{
+    margin-top: 18px;
+    margin-left: 10px;
+    color: #777;
+    font-size: 19px;
+}
+.PostProfileTwo .PhotoandP .Time{
+    margin-top: 18px;
+    margin-left: 50%;
+    color: #777;
+    font-size: 19px;
+}
+/* Video */
+.PostProfileTwo video{
+    border: none;
+    outline: none;
+    width: 103.5%;
+    margin-left: -1.7%;
+    margin-bottom: 5px;
+    margin-top: -10px;
+}
+/* hr */
+.hr{
+    border: 1px solid #777;
+    background-color: #777;
+    width: 100%;
+}
+
+/* None Section */
+.none{
+    display: none;
+    padding-bottom: 20px;
+}
+/* Comments In Posts */
+.CommentsInPosts .NumOfComments{
+    margin-top: 10px;
+}
+/* First Comment */
+.CommentsInPosts .AhmedComment{
+    display: flex;
+    margin-top: 50px;
+}
+.CommentsInPosts .FirstComment .AhmedComment img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.CommentsInPosts .FirstComment .AhmedComment a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #777;
+}
+.CommentsInPosts .FirstComment .AhmedComment p{
+    margin-top: 25px;
+    margin-left: -105px;
+    text-decoration: none;
+}
+/* Love In First Comment */
+.CommentsInPosts .LoveInComment{
+    display: flex;
+    margin-left: 75px;
+}
+.CommentsInPosts .LoveInComment .heart{
+    text-decoration: none;
+    color: #999;
+    margin-right: 5px;
+}
+.CommentsInPosts .LoveInComment .reply{
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+}
+/* Second Comment */
+.CommentsInPosts .AmanyComment{
+    display: flex;
+    margin-top: 40px;
+}
+.CommentsInPosts .SecondComment .AmanyComment img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.CommentsInPosts .SecondComment .AmanyComment a{
+    margin-left: 20px;
+    text-decoration: none;
+    display: block;
+    color: #777;
+}
+.CommentsInPosts .SecondComment .Lorem30{
+    margin-left: 80px;
+    margin-top: -35px;
+    width: 88%;
+    text-decoration: none;
+    display: block;
+}
+/* Love In Second Comment */
+.CommentsInPosts .LoveInComment{
+    display: flex;
+    margin-left: 75px;
+}
+.CommentsInPosts .LoveInComment .heart{
+    text-decoration: none;
+    color: #999;
+    margin-right: 5px;
+}
+.CommentsInPosts .LoveInComment .reply{
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+}
+/* My Comment */
+.CommentsInPosts .MyComment img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.CommentsInPosts .MyComment input[type="text"]{
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    background-color: #888;
+    width: 70%;
+    padding: 10px;
+}
+.CommentsInPosts .MyComment input[type="text"]::placeholder{
+    color: #FFF;
+    padding-left: 10px;
+}
+.CommentsInPosts .MyComment .Send{
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--color1);
+    color: #FFF;
+    padding: 10px;
+    padding-left: 17px;
+    width: 70px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+/* Scroll Bar In 3 Divs */
+.Notifications::-webkit-scrollbar, .FrindRequest::-webkit-scrollbar {
+    width: 0.6em;
+}
+.Notifications::-webkit-scrollbar-track, .FrindRequest::-webkit-scrollbar {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    max-height: 10px;
+    height: 10px;
+}
+.Notifications::-webkit-scrollbar-thumb, .FrindRequest::-webkit-scrollbar {
+  background-color: #FFF;
+  color: #FFF;
+  border-radius: 10px;
+}
+/* Frind Request */
+.FrindRequest{
+    background-color: var(--color2);
+    position: fixed;
+    top: 9.8%;
+    left: 51%;
+    padding: 15px;
+    width: 29%;
+    border-radius: 5px;
+    overflow: auto;
+    min-height: 200px;
+    max-height: 650px;
+    display: none;
+}
+.FrindRequest h2{
+    color: #FFF;
+    text-align: center;
+}
+/* Frinds */
+.FrindRequest .Frinds{
+    background-color: #042d4b;
+    margin-top: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 92%;
+    margin-left: 12px;
+}
+.FrindRequest .Frinds img{
+    width: 85px;
+    height: 85px;
+    border-radius: 5px;
+}
+/* P and a */
+.FrindRequest .Frinds .Panda{
+    margin-top: -70px;
+    margin-left: 95px;
+}
+.FrindRequest .Frinds .Panda a{
+    color: 	#87CEEB;
+}
+.FrindRequest .Frinds .Panda a:hover{
+    text-decoration: none;
+    color: #87cfeb60;
+}
+.FrindRequest .Frinds .Panda p{
+    color: #FFF;
+}
+.FrindRequest .Frinds .aaa{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.FrindRequest .Frinds .aaa a{
+    color: #FFF;
+    display: inline-block;
+    background-color: var(--color1);
+    width: 85px;
+    height: 45px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    text-align: center;
+    margin-right: 3px;
+    text-decoration: none;
+}
+#DifFrendReq{
+    margin-top: 60px;
+}
+.FrindRequest .Frinds .aaa .viewProf{
+    width: 100px;
+}
+.FrindRequest .Frinds .aaa a:hover{
+    background-color: #d7263ee1;
+}
+/* Messages */
+.Messages{
+    background-color: var(--color2);
+    position: fixed;
+    top: 9.8%;
+    left: 51%;
+    padding: 15px;
+    width: 29%;
+    border-radius: 5px;
+    display: none;
+}
+.Messages h2{
+    color: #FFF;
+    text-align: center;
+}
+/* MessagePeople */
+.Messages .MessagePeople{
+    padding: 2px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    width: 92%;
+    margin-left: 12px;
+    border-radius: 5px;
+}
+.Messages .MessagePeople:hover{
+    background-color: #042d4b;
+}
+.Messages .MessagePeople img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.Messages .MessagePeople a{
+    color: #FFF;
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin-left: 95px;
+    font-size: 18px;
+    margin-top: -70px;
+}
+.Messages .MessagePeople p{
+    margin-top: 6px;
+    margin-left: 95px;
+    color: #999;
+    font-size: 14px;
+}
+.Messages .MessagePeople .time{
+    margin-left: 300px;
+    margin-top: -40px;
+    color: #87CEEB;
+    font-size: 16px;
+}
+/* Notifications */
+.Notifications{
+    background-color: var(--color2);
+    position: fixed;
+    top: 9.8%;
+    left: 51%;
+    padding: 15px;
+    width: 29%;
+    border-radius: 5px;
+    overflow: auto;
+    min-height: 200px;
+    max-height: 650px;
+    display: none;
+}
+.Notifications a{
+    text-decoration: none;
+}
+.Notifications h2{
+    color: #FFF;
+    text-align: center;
+}
+/* Notificate People */
+.Notifications .NotificatePeople{
+    padding: 2px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    width: 92%;
+    margin-left: 12px;
+    border-radius: 5px;
+}
+.Notifications .NotificatePeople:hover{
+    background-color: #555;
+    border-radius: 5px;
+}
+.Notifications .NotificatePeople img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.Notifications .NotificatePeople h5{
+    margin-left: 95px;
+    color: #999;
+    font-size: 16px;
+    margin-top: -70px;
+    line-height: 22px;
+}
+.Notifications .NotificatePeople .blue{
+    color: var(--color3);
+    margin-top: 4px;
+    margin-left: 95px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.Notifications .NotificatePeople .blue i{
+    font-size: 8px;
+    margin-left: 55%;
+}
+.Notifications .NotificatePeople .Lorem14{
+    margin-left: 95px;
+    color: #999;
+    font-size: 16px;
+    margin-top: -70px;
+    line-height: 22px;
+}
+.Notifications .NotificatePeople .White{
+    color: #FFF;
+    margin-top: 4px;
+    margin-left: 95px;
+    font-size: 12px;
+}
+/* ComboBox */
+.ComboBox{
+    position: fixed;
+    background-color: #555;
+    top: 10%;
+    left: 81%;
+    width: 14%;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding-bottom: 20px;
+    display: none;
+}
+.ComboBox a{
+    text-decoration: none;
+}
+.ComboBox .ProfileLink{
+    text-align: center;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-top: 10px;
+}
+.ComboBox .ProfileLink i{
+    color: #FFF;
+    font-size: 20px;
+}
+.ComboBox .ProfileLink a{
+    color: #FFF;
+    margin-right: 10px;
+}
+.ComboBox .LogoutLink{
+    text-align: center;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-top: 10px;
+}
+.ComboBox .LogoutLink i{
+    color: #FFF;
+    font-size: 20px;
+}
+.ComboBox .LogoutLink a{
+    color: #FFF;
+    margin-right: 10px;
+}
+.ComboBox hr{
+    border: 1px solid #000;
+}
+.ComboBox .ProfileLink:hover{
+    background-color: var(--color1);
+    border-radius: 10px;
+}
+.ComboBox .LogoutLink:hover{
+    background-color: var(--color1);
+    border-radius: 10px;
+}
+.HideContent{
+    display: none;
+}
+.ShowContent{
+    display: block;
+}
+/* Class active To Color Love Icon */
+.SectionUpdate .UpdateProfile .LoveandComments .LoveIcon .active{
+    color: var(--color1);
+}
+.SectionPOne .PostProfile .LoveandComments .LoveIcon .active{
+    color: var(--color1);
+}
+.SectionPTwo .PostProfile .LoveandComments .LoveIcon .active{
+    color: var(--color1);
+}
+.SectionPostTwo .PostProfileTwo .LoveandComments .LoveIcon .active{
+    color: var(--color1);
+}

@@ -1,0 +1,807 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --color1: #d7263d;
+    --color2: #02182b;
+    --color3: #0197F6;
+    --color4: #448Fa3;
+    --color5: #68c5db;
+    --color6: #042d4b;
+}
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: rgb(200,200,200);
+}
+/* Nav Bar */
+/* Image Logo */
+.NavBar{
+    background-color: var(--color2);
+    height: 70px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+}
+.NavBar .ImageLogoInput{
+    display: flex;
+    width: 50%;
+}
+.NavBar .ImageLogo{
+    height: 70px;
+    width: 76px;
+    background-color: var(--color1);
+}
+.NavBar .ImageLogo .Logo{
+    width: 60px;
+    height: 45px;
+    margin: 10px 0 0 5px;
+}
+.NavBar input[type="search"]{
+    margin-left: 170px;
+    height: 45px;
+    width: 60%;
+    margin-top: 12px;
+    border: none;
+    outline: none;
+    background-color:#042d4b;
+    border-radius: 25px;
+    padding: 20px;
+    color: #FFF;
+}
+/* Icons And Profile */
+.NavBar .IconsandProfile{
+    width: 50%;
+    display: flex;
+}
+/* Icons */
+.NavBar .icons{
+    display: flex;
+    position: relative;
+}
+/* Number Above Icons */
+.NavBar .icons .numOne{
+    position: fixed;
+    top: 0.9%;
+    left: 58%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color1);
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    padding: 1px;
+    margin-left: 30px;
+}
+.NavBar .icons .numTwo{
+    position: fixed;
+    top: 1%;
+    left: 63.5%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color1);
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    padding: 1px;
+    margin-left: 30px;
+}
+.NavBar .icons .numThree{
+    position: fixed;
+    top: 1.1%;
+    left: 67.5%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color1);
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    padding: 1px;
+    margin-left: 30px;
+}
+/* Icons */
+.NavBar .icons .users{
+    position: fixed;
+    top: 3%;
+    left: 58%;
+    color: #777;
+    font-size: 30px;
+}
+.NavBar .icons .comments{
+    color: #777;
+    font-size: 30px;
+    position: fixed;
+    top: 3%;
+    left: 63.5%;
+}
+.NavBar .icons .bell{
+    color: #777;
+    font-size: 30px;
+    position: fixed;
+    top: 3%;
+    left: 68%;
+}
+/* Profile */
+.NavBar .Profile{
+    display: flex;
+    margin-left: 20px;
+}
+.NavBar .Profile img{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    margin-left: 470px;
+    margin-top: 10px;
+}
+.NavBar .Profile p{
+    color: #FFF;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.NavBar .Profile .sortDown{
+    font-size: 25px;
+    color: #777;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.NavBar i:hover{
+    cursor: pointer;
+}
+/* Empty */
+.empty{
+    background-color: rgb(200,200,200);
+    margin-top: 70px;
+    width: 100%;
+    height: 30px;
+}
+/* Background Image */
+.backgroundImage{
+    background-image: url(../Images/b.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 550px;
+} 
+/* Edit Profile */
+.EditProfile{
+    text-decoration: none;
+    display: flex;
+    background-color: #FFF;
+    width: 160px;
+    height: 38px;
+    text-align: center;
+    position: relative;
+    top: 85%;
+    left: 87%;
+    border-radius: 7px;
+    padding-top: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    color: #000;
+}
+.EditProfile i{
+    margin-right: 12px;
+    padding-top: 5px;
+}
+.EditProfile:hover{
+    transform: scale(1.1);
+    background-color: #000;
+    color: #FFF;
+}
+/* Profile Image and Icon */
+.backgroundImage img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    border: 4px solid #FFF;
+}
+.backgroundImage .image{
+    position: absolute;
+    top: 71%;
+    left: 15%;
+    font-size: 25px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    color: #FFF;
+    text-align: center;
+    background-color: #2d7227;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+/* Second Nav Bar */
+.SecondNavBar{
+    background-color:#FFF;
+    display: flex;
+    height: 90px;
+    box-sizing: border-box;
+    z-index: -1;
+}
+/* Nav 2 */
+.SecondNavBar h3{
+    margin-left: 300px;
+    display: block;
+    padding-top: 10px;
+    font-size: 25px;
+    font-family: 'Yusei Magic', sans-serif;
+    color: var(--color6);
+}
+.SecondNavBar p{
+    display: block;
+    padding-top: 50px;
+    margin-left: -160px;
+    font-size: 20px;
+    color: var(--color6);
+}
+.SecondNavBar .nav ul{
+    display: flex;
+    list-style: none;
+    padding-top: 35px;
+    margin-left: 500px;
+}
+.SecondNavBar .nav a{
+    text-decoration: none;
+    color: var(--color6);
+    margin-right: 40px;
+}
+.SecondNavBar .nav .dif{
+    color: var(--color1);
+}
+.SecondNavBar .nav ul li a:hover{
+    text-decoration: underline;
+    color: var(--color1);
+}
+/* Left One Div */
+.LeftOneDiv{
+    background-color: #FFF;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 23%;
+    border: 1px solid #000;
+    margin-top: -2250px;
+    margin-left: 20px;
+}
+.LeftOneDiv img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-left: 15px;
+}
+.LeftOneDiv h3{
+    padding: 15px;
+    font-size: 20px;
+    color: #444;
+}
+.LeftOneDiv .OneOfLeft, .LeftOneDiv .TwoOfLeft, .LeftOneDiv .ThreeOfLeft, .LeftOneDiv .FourOfLeft{
+    display: flex;
+    margin-bottom: 7px;
+}
+.LeftOneDiv a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+/* Ona And Two Of Left */
+.LeftOneDiv .OneOfLeft img, .LeftOneDiv .TwoOfLeft img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 10px 7px 0px 10px;
+}
+.LeftOneDiv .OneOfLeft h5, .LeftOneDiv .TwoOfLeft h5{
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+.LeftOneDiv .OneOfLeft p{
+    color: #999;
+    font-weight: lighter;
+    font-size: 13px;
+    margin-top: 45px;
+    margin-left: -135px;
+    font-weight: 400;
+}
+.LeftOneDiv .TwoOfLeft p{
+    color: #999;
+    font-weight: lighter;
+    font-size: 13px;
+    margin-top: 45px;
+    margin-left: -135px;
+    font-weight: 400;
+}
+.LeftOneDiv .OneOfLeft i, .LeftOneDiv .TwoOfLeft i{
+    font-size: 18px;
+    margin-left: 150px;
+    margin-top: 25px;
+    color: var(--color1);
+}
+/* Three and Four Of Left */
+.LeftOneDiv .ThreeOfLeft img, .LeftOneDiv .FourOfLeft img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 10px 7px 0px 10px;
+}
+.LeftOneDiv .ThreeOfLeft h5, .LeftOneDiv .FourOfLeft h5{
+    font-size: 15px;
+    margin-top: 18px;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+.LeftOneDiv .ThreeOfLeft p{
+    color: #999;
+    font-weight: lighter;
+    font-size: 13px;
+    margin-left: -135px;
+    margin-top: 40px;
+    font-weight: 400;
+}
+.LeftOneDiv .FourOfLeft p{
+    color: #999;
+    font-weight: lighter;
+    font-size: 13px;
+    margin-left: -135px;
+    margin-top: 40px;
+    font-weight: 400;
+}
+.LeftOneDiv .ThreeOfLeft i, .LeftOneDiv .FourOfLeft i{
+    font-size: 18px;
+    margin-left: 150px;
+    margin-top: 25px;
+}
+.LeftOneDiv a:hover{
+    text-decoration: underline;
+}
+/* Left Two Div */
+.LeftTwoDiv{
+    background-color: #FFF;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #555;
+    width: 23%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.LeftTwoDiv img{
+    width: 100px;
+    height: 85px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.LeftTwoDiv .row1{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.LeftTwoDiv .row2{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.LeftTwoDiv h3{
+    padding: 15px;
+    font-size: 20px;
+    color: #444;
+}
+.LeftTwoDiv hr{
+    width: 100%;
+    margin-top: -3px;
+}
+/* Left Two Div */
+.RightOneDiv{
+    background-color: #FFF;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #555;
+    width: 20%;
+    margin-top: -44%;
+    margin-left: 79%;
+}
+.RightOneDiv img{
+    width: 90px;
+    height: 85px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.RightOneDiv .row1{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.RightOneDiv .row2{
+    display: flex;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.RightOneDiv .row3{
+    display: flex;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.RightOneDiv .insta{
+    display: flex;
+}
+.RightOneDiv .insta i{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+    color: #2d7227;
+}
+.RightOneDiv .insta .double-right{
+    font-size: 22px;
+    margin-left: 100px;
+}
+.RightOneDiv h3{
+    padding: 15px;
+    font-size: 20px;
+    color: #444;
+}
+.RightOneDiv hr{
+    width: 100%;
+    margin-top: -3px;
+}
+/* Right Two Div */
+.RightTwoDiv{
+    background-color: #FFF;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #555;
+    width: 20%;
+    margin-top: 20px;
+    margin-left: 79%;
+}
+.RightTwoDiv .Suggestions{
+    display: flex;
+}
+.RightTwoDiv h3{
+    padding: 15px;
+    font-size: 20px;
+    color: #444;
+}
+.RightTwoDiv .Suggestions i{
+    padding-top: 20px;
+    font-size: 25px;
+    color: #2d7227;
+    font-size: 22px;
+    margin-left: 100px;
+}
+.RightTwoDiv .OneOfRight, .RightTwoDiv .TwoOfRight, .RightTwoDiv .ThreeOfRight, .RightTwoDiv .FourOfRight{
+    display: flex;
+    margin-bottom: 7px;
+}
+.RightTwoDiv a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+/* One, Two, Three, Four Of Right Div */
+.RightTwoDiv .OneOfRight img, .RightTwoDiv .TwoOfRight img, .RightTwoDiv .ThreeOfRight img, .RightTwoDiv .FourOfRight img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px 7px 0px 10px;
+}
+.RightTwoDiv .OneOfRight h5, .RightTwoDiv .TwoOfRight h5, .RightTwoDiv .ThreeOfRight h5, .RightTwoDiv .FourOfRight h5{
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+.RightTwoDiv .OneOfRight p, .RightTwoDiv .TwoOfRight p, .RightTwoDiv .ThreeOfRight p, .RightTwoDiv .FourOfRight p{
+    color: #333;
+    font-weight: lighter;
+    font-size: 14px;
+    margin-top: 45px;
+    margin-left: -70px;
+    font-weight: 400;
+}
+.RightTwoDiv .OneOfRight i, .RightTwoDiv .TwoOfRight i, .RightTwoDiv .ThreeOfRight i, .RightTwoDiv .FourOfRight i{
+    font-size: 18px;
+    margin-left: 60px;
+    margin-top: 28px;
+    color: #999;
+}
+.RightTwoDiv a:hover{
+    text-decoration: underline;
+}
+.RightTwoDiv i:hover{
+    color: #2d7227;
+}
+/* Post */
+.Post{
+    background-color: #FFF;
+    position: relative;
+    margin-top: 1.5%;
+    margin-left: 26%;
+    width: 52%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+.Post .ImageInputPost{
+    display: flex;
+}
+.Post img{
+    height: 115px;
+    width: 120px;
+    margin-right: 12px;
+    margin-left: 10px;
+}
+.Post textarea{
+    border: none;
+    outline: none;
+    background-color: #A8A8A8;
+    border-radius: 5px;
+    color: #555;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.Post textarea::placeholder{
+    font-size: 22px;
+    color: #444;
+}
+.Post .PostNow{
+    display: inline-block;
+    margin-left: 35%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--color1);
+    color: #FFF;
+    width: 30%;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.Post .PostNow:hover{
+    opacity: 0.9;
+}
+.Post .ThreeIcons{
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.Post .ThreeIcons .VideoIcon, .Post .ThreeIcons .PhotosIcon, .Post .ThreeIcons .FeelingIcon{
+    display: flex;
+}
+.Post .ThreeIcons a{
+    text-decoration: none;
+}
+.Post .ThreeIcons a:hover{
+    opacity: 0.8;
+}
+.Post .ThreeIcons .VideoIcon i{
+    font-size: 25px;
+    color: var(--color1);
+    margin-right: 10px;
+    margin-left: 60px;
+}
+.Post .ThreeIcons .PhotosIcon i{
+    font-size: 25px;
+    color: green;
+    margin-right: 10px;
+    margin-left: 150px;
+}
+.Post .ThreeIcons .FeelingIcon i{
+    font-size: 25px;
+    color: orange;
+    margin-right: 10px;
+    margin-left: 150px;
+}
+.Post .ThreeIcons  p{
+    color: #999;
+}
+/* Update Profile */
+.UpdateProfile{
+    background-color: #FFF;
+    margin-top: 1.5%;
+    margin-left: 26%;
+    width: 52%;
+    border-radius: 10px;
+}
+/* Photo and P*/
+.UpdateProfile .PhotoandP{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.UpdateProfile .PhotoandP .CirculeImage{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.UpdateProfile .PhotoandP a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #000;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.UpdateProfile .PhotoandP p{
+    margin-top: 18px;
+    margin-left: 10px;
+    color: #666;
+    font-size: 19px;
+}
+.UpdateProfile .PhotoandP .Time{
+    margin-top: 18px;
+    margin-left: 35%;
+    color: #666;
+    font-size: 19px;
+}
+/* Profile New Pic*/
+.UpdateProfile .ProfileNewPic{
+    position: relative;
+}
+.UpdateProfile .ProfileNewPic .NewBackground{
+    width: 100%;
+}
+.UpdateProfile .ProfileNewPic .NewPic{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    top: 22%;
+    left: 28%;
+    border: 6px solid #FFF;
+}
+/* Love and Comments --> UpdateProfile & PostProfile */
+.LoveandComments{
+    display: flex;
+    padding-bottom: 20px;
+}
+.LoveandComments .LoveIcon{
+    display: flex;
+}
+.LoveandComments .LoveIcon i{
+    color: #777;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.LoveandComments .LoveIcon p{
+    margin-left: 10px;
+    margin-top: 15px;
+    color: #555;
+}
+.LoveandComments .CommentIcon{
+    display: flex;
+}
+.LoveandComments .CommentIcon i{
+    color: #777;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.LoveandComments .CommentIcon p{
+    margin-left: 10px;
+    margin-top: 15px;
+    color: #555;
+}
+.LoveandComments .CommentIcon p:hover{
+    cursor: pointer;
+}
+.LoveandComments .ShareIcon{
+    display: flex;
+}
+.LoveandComments .ShareIcon i{
+    color: #777;
+    margin-top: 20px;
+    margin-left: 350px;
+}
+.LoveandComments .ShareIcon p{
+    margin-left: 10px;
+    margin-top: 15px;
+    color: #555;
+}
+.LoveandComments i:hover{
+    cursor: pointer;
+}
+/* Post Profile */
+.PostProfile{
+    background-color: #FFF;
+    margin-bottom: 1.5%;
+    margin-top: 1.5%;
+    margin-left: 26%;
+    width: 52%;
+    border-radius: 10px;
+}
+/* Photo and P */
+.PostProfile .PhotoandP{
+    display: flex;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.PostProfile .PhotoandP .CirculeImage{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.PostProfile .PhotoandP a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #000;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.PostProfile .PhotoandP .Time{
+    margin-top: 18px;
+    margin-left: 72%;
+    color: #777;
+    font-size: 19px;
+}
+.PostProfile .Pandhr p{
+    padding-left: 15px;
+    color: #555;
+    margin-bottom: 10px;
+}
+.hr{
+    border: 1px solid #999;
+    background-color: #555;
+}
+/* Post Profile Two */
+.PostProfileTwo{
+    background-color: #FFF;
+    margin-bottom: 1.5%;
+    margin-top: 1.5%;
+    margin-left: 26%;
+    width: 52%;
+    border-radius: 10px;
+}
+/* Photo and P*/
+.PostProfileTwo .PhotoandP{
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.PostProfileTwo .PhotoandP .CirculeImage{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.PostProfileTwo .PhotoandP a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #000;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.PostProfileTwo .PhotoandP p{
+    margin-top: 18px;
+    margin-left: 10px;
+    color: #777;
+    font-size: 19px;
+}
+.PostProfileTwo .PhotoandP .Time{
+    margin-top: 18px;
+    margin-left: 50%;
+    color: #777;
+    font-size: 19px;
+}
+/* Video */
+.PostProfileTwo video{
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: -10px;
+}
